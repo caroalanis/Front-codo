@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 8</title>
+    <style>
+
+        .cajaContainer {
+            width: 250px;
+            height: 200px;
+            background-color: aquamarine;
+            margin: 10px;
+            padding: 10px;
+            border: 5px solid red;
+        }
+
+        .dos{
+            
+            
+            background-color: red;
+            display: inline-block; /*solo ocupa el espacio del texto*/
+            width: 28%;
+        }
+
+        .tres{
+            
+            height: 30px;
+            background-color: orange;
+            display: inline-block;
+            width: 28%;
+        }
+        .cuatro{
+            
+            height: 30px;
+            background-color: purple;
+            display: inline-block;
+            width: 28%;
+        }
+/*para aplicarselo a todos los div dentro de la caja container*/
+        .cajaContainer div{
+            height: 200px;
+            margin: 5px;
+
+        }
+
+        .cajasola {
+            padding-top: 10 px;
+            background-color: aquamarine;
+            width: 200px;
+            height: 200px;
+            box-sizing: border-box;
+
+        }
+    </style>    
+</head>
+
+    <body>
+        <main>
+            <header>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="medidas.html"> medidas </a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <section>
+                <div class="cajaContainer">
+                        <div class="dos">
+                        dos
+                    </div >
+                    <div class="tres">
+                    tres
+                    </div>
+                    <div class="cuatro">
+                        cuatro
+                        </div>
+                </div>
+                
+            </section>
+
+        </main>
+
+    
+</body>
+</html>

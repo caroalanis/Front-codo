@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fieldset</title>
+    <style>
+        a {
+            color:red;
+            text-decoration: none;
+        }
+        ul{
+            list-style: none; /*none, circle, disc (default), decimal (se comporta como el ol) */
+        }
+        /* herencia */ /* */
+        ul li a {
+            color:green;
+        }
+
+        .texto-color{
+            color:blue; /*el color lo pisa el inline*/
+        }
+        /*el unico q le gana a todos (en orden de importancia) es el importan*/
+        /*important > inline > id > class*/
+        .texto-color-important{
+ color:blue important}
+
+ /*selector de atributos*/
+ [href]{
+    background-color: aquamarine;
+    text-decoration: line-through;
+ }
+ [href$=a]{
+    text-decoration: underline;
+ }
+/* igual a*/
+ [id="Galeria"]{
+    background-color: red;
+ }
+
+ /*inice con algo (alt+94 ^)*/
+[id^="Re"]{
+    background-color: orange;
+}
+ /*que contenga*/
+ [id*="ale"]{
+    font-size: 18px;
+    color:blue;
+    padding: 15px;
+ }
+
+ /*que termine con */
+ [id$="s"]{
+    background-color: sandybrown;
+ }
+    </style>
+</head>
+<body>
+    <main>
+
+<section>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#ReGaleria">Re Galeria</a>
+                </li>
+                <li>
+                    <a href="caja.html">caja</a>
+                </li>
+                <li>
+                    <a href="link1">Link1</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+</section>
+
+<section>
+    <p style="color:red" 
+    class="texto-color"
+ class="texto-color-important"
+
+    >
+    Parrafo
+</p>
+</section>
+
+
+
+
+
+
+
+    <section>
+            <Fieldset>
+            <legend>Oficiales</legend>
+            <form>
+            <input type="file" name="archivo">
+            <button>
+                Enviar
+            </button>
+        </form>
+        </Fieldset>
+    </section>
+
+    <section id="Nosotros">
+    <h3>Nosotros</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa fugit illum ea aperiam pariatur architecto totam nam sint in alias odit nisi officia dolores quas perspiciatis aliquam, iste cumque repellendus.</p>
+    </section>
+   
+
+    <section id="Contacto">
+    <h3>Contacto</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa fugit illum ea aperiam pariatur architecto totam nam sint in alias odit nisi officia dolores quas perspiciatis aliquam, iste cumque repellendus.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa fugit illum ea aperiam pariatur architecto totam nam sint in alias odit nisi officia dolores quas perspiciatis aliquam, iste cumque repellendus.</p>    
+</section>
+
+    <section id="Galeria">
+        <h3>Galeria</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa fugit illum ea aperiam pariatur architecto totam nam sint in alias odit nisi officia dolores quas perspiciatis aliquam, iste cumque repellendus.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa fugit illum ea aperiam pariatur architecto totam nam sint in alias odit nisi officia dolores quas perspiciatis aliquam, iste cumque repellendus.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa fugit illum ea aperiam pariatur architecto totam nam sint in alias odit nisi officia dolores quas perspiciatis aliquam, iste cumque repellendus.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa fugit illum ea aperiam pariatur architecto totam nam sint in alias odit nisi officia dolores quas perspiciatis aliquam, iste cumque repellendus.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa fugit illum ea aperiam pariatur architecto totam nam sint in alias odit nisi officia dolores quas perspiciatis aliquam, iste cumque repellendus.</p>
+    </section>
+
+        <section id="ReGaleria">
+            <h3>Re Galeria</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa fugit illum ea aperiam pariatur architecto totam nam sint in alias odit nisi officia dolores quas perspiciatis aliquam, iste cumque repellendus.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa fugit illum ea aperiam pariatur architecto totam nam sint in alias odit nisi officia dolores quas perspiciatis aliquam, iste cumque repellendus.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa fugit illum ea aperiam pariatur architecto totam nam sint in alias odit nisi officia dolores quas perspiciatis aliquam, iste cumque repellendus.</p>
+        </section>
+
+    
+
+    
+    </main>
+    
+</body>
+</html>
