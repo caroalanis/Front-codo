@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Alumni+Sans+Collegiate+One&family=Roboto:ital,wght@1,100&display=swap');
+/* Esto es un comentario en css
+*/
+/* seleccion todos los h1 del documento*/
+
+
+/*selector {
+    atributo:valor;}
+*/
+
+/* selector por tipo*/
+h1 {color:blue;
+
+}
+h2 {
+    font-size: 45px;
+    color:blueviolet;
+}
+p {
+    color:brown;
+} /* si hay mas de un parraforo sin identificarlo distinto van a ser modificadas ambas*/
+
+/*selector por id*/
+#parrafo2 {
+    color:bisque;
+}
+
+/* selector por clase*/
+
+.claseparrafo {
+    color: rgb(194, 47, 150);
+}
+
+.caja {
+    background-color: black;
+    height: 100px;
+    font-size: 16px;
+}
+.caja p {
+    color: palegreen;
+}
+
+.textoItalic {
+    font-style: italic;
+}
+.textoBold {
+    font-weight: bold;
+    font-family: 'Aboreto', cursive;
+}
+
+/* fuente externa */
+/* se lo aplico a todo con un selector goblan*/
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* colores */
+/* RGB: (red, green, blue)
+RGB(0,0,0)
+RGB(255,255,255) llega hasta 255
+*/
+
+/*hexagecimal*/
+p.color{
+    color: #12bc12;
+}
+
+/*rgb + alpha(0-1)*/
+p.colorAlpha {
+    font-size: 30px;
+    color:rgb(5,1751,200,0.8)
+}
