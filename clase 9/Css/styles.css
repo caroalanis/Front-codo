@@ -1,0 +1,45 @@
+/*agrego en la primer linea las fuentes*/
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Alumni+Sans+Collegiate+One&family=Roboto:ital,wght@1,100&display=swap');
+
+
+*{ /*si quiero q se aplique a todo, lo hago con un selector universal*/
+    font-family: 'Roboto', sans-serif;
+}
+
+
+body{
+    background-color: antiquewhite;
+}
+
+.menu-container {
+    list-style-type: none; /*para sacarle los puntitos del ul*/
+    background-color: black;
+    padding: 15px;
+    height: 30px;
+    
+}
+.menu-container li a{ 
+    text-decoration: none; /*para sacarle el subrayado*/
+    display: block;
+    height: 50px;
+    color:white;
+}
+
+.menu-container li{
+    display: inline-block; /*para ponerlo uno al lado del otro*/
+    margin: 5px;/*para separarlos un poco entre ellos*/
+
+}
+/*pseudo clase*/ /*cuando paso el mouse sobre algo*/
+.menu-container li a:hover{
+    color: blueviolet;
+    font-size: 125%;
+    /*redondear el borde
+    border-radius:15px*/
+
+}
+
+.menu-container li a.active {
+    font-size: 20px;
+    color: aqua;
+}
