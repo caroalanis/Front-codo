@@ -1,0 +1,150 @@
+/*odd (impar) even (par)*/
+
+/*flexbox*/
+
+.container-flex {
+    flex-direction: row-reverse; /*row|column*/
+    border: 1px solid red;
+    display: flex;
+    background-color: beige;
+    justify-content: space-evenly; /*alinea el contenido*/
+     height: 400px; 
+     align-items: flex-start; 
+     width: 50%; 
+    flex-wrap: wrap; /*nowrap*/
+
+}
+
+.container-item {
+    width: 100px;
+    height: 50px;
+    border: 2px solid yellow;
+    background-color: aqua;
+}
+
+/*media query: me sirve para cambiar los estilos cuando cambia la resolucion
+@media screen and (max-width:600px) {
+    .container-flex {
+        flex-direction: column;
+        background-color: blueviolet;
+    }
+    .container-item {
+        font-size: 2em;
+        color:blue
+    }
+    }
+*/
+
+
+section {
+    height: 650px;
+    /*border: 1px solid blue;*/
+    /*margin: 10px;*/
+    display: flex;
+    padding: 10px;
+    align-items:center;
+    justify-content: center;
+}
+
+section img {
+    margin:15px;
+    width: 20%;
+}
+
+/*estilos para las section */
+main section:first-child {
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+}
+/*last-child (para el ultimo)*/
+main section:nth-child(3) {
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+}
+
+/*:nth-child(2)*/
+main section:nth-child(2) {
+    background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+}
+/*
+section:nth-child(odd) {
+    background-color: rgb(255, 204, 0);
+}
+section:nth-child(even) {
+    background-color: rgb(0, 255, 4);
+}
+section:first-child {
+    background-color: rgb(255, 100, 0) !important;
+}
+*/
+/*:nth:child(3n+1) : TPH*/
+
+
+/*html:*/
+html {
+    scroll-behavior: smooth;
+}
+/*menu*/
+.menu-container{
+    background-color: rgb(194, 114, 187);
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    height: 50px;
+
+    position: sticky;
+    top:0;
+    
+}
+.menu-container ul li{
+    display:inline-block;
+    height: 10px;
+}
+
+.menu-container a{
+    text-decoration: none;
+
+   
+}
+.menu-container a:hover{
+    font-size: 1.2em;
+    color:azure
+}
+header img{
+height: 100%;
+width: 100%;
+display: block; /*para eliminar el espacio fanstama*/
+}
+/*
+table tr:nth-child(2n+1){ (cada dos filas, comenzando desde el 1)
+    background-color: red;
+}*/
+
+.content-text a{
+    display:inline-block;
+    width: 100px;
+    height: 45px;
+    border: 1px solid rgb(122, 56, 122);
+    border-radius: 20px; /*hacerlo ovalado*/
+    line-height: 40px; /*lo centro*/
+    background: pink;
+    font-size: 1.1em;
+    text-decoration: none;
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+.content-text a:hover{
+    border: 1px solid red;
+}
+@media screen and (max-width:1000px){
+    section{
+        flex-direction: column;
+    }
+    section img{
+        width: 25%;
+    }
+    .content-text{
+        text-align: center;
+
+    }
+    
+} /*si lo pongo al final lo toma como lo mas importante, sino tengo q poner !important*/
