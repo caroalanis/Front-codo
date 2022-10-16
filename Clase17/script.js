@@ -82,10 +82,9 @@ alumnos.forEach(unAlumno => edadTotal += unAlumno.edad);
 console.log('old total:',edadTotal);
 
 //sumar todas las edades : NEW
-//REDUCE
+//REDUCE (lo suma todo en solo elemento)
 
 const edadTotal2 = alumnos.reduce((total,alumnoActual) => total + alumnoActual.edad, 0);
 
 console.log('new total:', edadTotal2);
-
 
